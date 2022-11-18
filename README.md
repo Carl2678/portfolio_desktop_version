@@ -17,7 +17,7 @@
 ## Live Demo
 
 [Live Demo Link](https://github.com/Carl2678/portfolio_desktop_version)
-
+[Video demonstration](https://www.loom.com/share/bc286a636eb2416c9860b56dcb79fa0a)
 
 ## Getting Started
 
