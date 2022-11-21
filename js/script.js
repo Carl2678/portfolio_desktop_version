@@ -1,11 +1,17 @@
+const menu = document.querySelector(".navbar__menu");
+const menuItems = document.querySelectorAll(".navbar__menu__li");
+const hamburger= document.querySelector(".navbar__hamb");
 
-const hamburger = document.querySelector('.hamburger');
-hamburger.addEventListener('click', () => {
-    const div = document.createElement('div');
-    const img = document.createElement('img');
-    const links = document.querySelector('.internal-link');
-    const hero = document.querySelector('.hero');
-    const divWrap = document.createElement('div');
-    const linksChilds = Array.from(links.children);
-    body.style.overflow = 'hidden';
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
 }
+
+hamburger.addEventListener("click", toggleMenu);
