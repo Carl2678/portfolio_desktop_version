@@ -1,24 +1,28 @@
- const menuIconMobile = document.querySelector('.hamburger');
+ const hamburger = document.querySelector('.hamburger');
  const menu = document.querySelector('.menu_navigation');
- const menuLinks = document.querySelectorAll('.menu_navigation_lien');
+ const menuLinks = document.querySelectorAll('.menu_navigation');
+ const btnOpenMenu = document.querySelector('.iconemenu');
+ const btnCloseMenu = document.querySelector('.btn-close');
 
 const isActiveClassExisted = (element) => element.classList.contains('active');
 
 const refreshIcon = () => {
   if (isActiveClassExisted(menu)) {
-    menuIconMobile.setAttribute('src','images/hamburguer-close.png');
+    hamburger.setAttribute('src','images/hamb-close.png');
   } else {
-    menuIconMobile.setAttribute('src','images/hamburguer.png');
+    hamburger.setAttribute('src','images/iconemenu.png');
   }
 };
-const openMenu = () => {
+const openMenu = (e) => {
   menu.classList.toggle('active');
   refreshIcon();
 };
 
- const closeMenu = () => {
+ const closeMenu = (e) => {
   menu.classList.remove('active');
   refreshIcon();
+  
 };
+
 
 
