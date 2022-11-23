@@ -29,7 +29,6 @@ body {
   background: #fff;
 }
 
-
 .bg-para-50 {
   background: #dedeec;
 }
@@ -44,10 +43,6 @@ body {
 
 .color-new-700 {
   color: #20355a;
-}
-
-.color-new-700 {
-  color: #32486d;
 }
 
 .color-new-500 {
@@ -88,10 +83,6 @@ body {
 
 .size_font-16 {
   font-size: 16px;
-}
-
-.size_font-18 {
-  font-size: 15px;
 }
 
 .size_font-13 {
@@ -619,16 +610,13 @@ body {
     flex-direction: column;
   }
 
-  .menu_navigation_objet {
-    margin-bottom: 40px;
-  }
-
   .menu_navigation_objet a {
     font-size: 32px;
     font-weight: 600;
     line-height: 44px;
     color: #fff;
     transition: color 1s;
+    margin-bottom: 40px;
   }
 
   .menu_navigation_objet a:hover {
