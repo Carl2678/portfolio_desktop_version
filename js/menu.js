@@ -1,6 +1,6 @@
- const menuIconMobile = document.querySelector('.navbar__hamb');
- const menu = document.querySelector('.navbar__menu');
- const menuLinks = document.querySelectorAll('.navbar__menu__link');
+ const menuIconMobile = document.querySelector('.hamburger');
+ const menu = document.querySelector('.menu_navigation');
+ const menuLinks = document.querySelectorAll('.menu_navigation_lien');
 
 const isActiveClassExisted = (element) => element.classList.contains('active');
 
