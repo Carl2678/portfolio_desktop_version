@@ -205,6 +205,7 @@ body {
   border-radius: 0;
   cursor: pointer;
 }
+
 .header-navigation-mobile {
   position: fixed;
   top: 0%;
@@ -218,10 +219,6 @@ body {
   border: 2px lightgrey solid;
   border-radius: 34px;
   z-index: 60;
-}
-
-.hidden {
-  display: none;
 }
 
 .btn-close-navigation {
