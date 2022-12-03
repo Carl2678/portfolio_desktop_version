@@ -1,35 +1,24 @@
-const hamburger = document.querySelector('.hamburger');
- const menu = document.querySelector('.menu_navigation');
- const menuLinks = document.querySelectorAll('.bar_navigation');
- const btnOpenMenu = document.querySelector('.iconemenu');
-const btnCloseMenu = document.querySelector('.btn-close');
+const menuBtn = document.querySelector('.hamburger');
+const headerNavMobile = document.querySelector('.header-navigation-mobile');
+const cancelCross = document.querySelector('.close-croix');
+const linkSection = document.getElementsByClassName('menumobile');
 
-const isActiveClassExisted = (element) => element.classList.contains('active');
-
-const refreshIcon = () => {
-  if (isActiveClassExisted(menu)) {
-    hamburger.setAttribute('src','images/hamb-close.png');
-  } else {
-    hamburger.setAttribute('src','images/iconemenu.png');
-  }
-};
-const openMenu = () => {
-  menu.classList.toggle('active');
-  refreshIcon();
-};
-
- const closeMenu = () => {
-  menu.classList.remove('active');
-  refreshIcon();
-  
-};
-
-hamburger.addEventListener('click', openMenu);
-menuLinks.forEach((menuLink) => {
-  menuLink.addEventListener('click', closeMenu);
+menuBtn.addEventListener('click', () => {
+  headerNavMobile.classList.remove('hidden');
 });
 
+cancelCross.addEventListener('click', () => {
+  headerNavMobile.classList.add('hidden');
+});
 
+linkSection[0].addEventListener('click', () => {
+  headerNavMobile.classList.toggle('hidden');
+});
 
+linkSection[1].addEventListener('click', () => {
+  headerNavMobile.classList.add('hidden');
+});
 
-
+linkSection[2].addEventListener('click', () => {
+  headerNavMobile.classList.add('hidden');
+});
